@@ -2,3 +2,25 @@
 @source "../../app/**/*.php";
 @source "../**/*.blade.php";
 @source "../**/*.js";
+
+/*@theme static forces unused TW tokens to generate as CSS variables. This allows Sage to include them when generating theme.json, and makes them accessible in gutenberg.*/
+@theme static {
+  /* Disables default TW color tokens */
+  --color-*: initial;
+
+  --color-transparent: transparent;
+  --color-current: currentColor;
+  --color-inherit: inherit;
+
+  /* Neutrals suggested by client: black background, white text, high contrast */
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-surface: #0f0f0f; /* cards raised sections */
+  --color-surface-raised: #1a1a1a; /* nested or hover surfaces */
+  --color-border: #2a2a2a; /* borders, dividers */
+  --color-muted: #a3a3a3; /* secondary text and muted captions */
+
+  /* Accent suggested by client: blue, for outlines and interactive elements */
+  --color-accent: #3b82f6; /* links, outlines and interactive borders */
+  --color-accent-hover: #60a5fa; /* lighter version for hover / active on a dark bg */
+}
