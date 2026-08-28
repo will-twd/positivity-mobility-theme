@@ -9,17 +9,17 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
   </head>
 
-  <body @php(body_class())>
+  <body @php(body_class('bg-black text-white antialiased'))>
     @php(wp_body_open())
 
-    <div id="app">
-      <a class="sr-only focus:not-sr-only" href="#main">
+    <div id="app" class="flex min-h-screen flex-col">
+      <a class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:bg-accent focus:px-4 focus:py-2 focus:text-white" href="#main">
         {{ __('Skip to content', 'sage') }}
       </a>
 
       @include('sections.header')
 
-      <main id="main" class="main">
+      <main id="main" class="flex-1">
         @yield('content')
       </main>
 
