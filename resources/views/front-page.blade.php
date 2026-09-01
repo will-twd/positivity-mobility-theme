@@ -10,7 +10,7 @@
     </section>
 
     <section id="about">
-        <h2>About teaser</h2>
+        <h2 class="text-step-4">About teaser</h2>
     </section>
 
     <section id="blog">
