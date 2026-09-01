@@ -9,7 +9,7 @@
         <h2>Services overview</h2>
     </section>
 
-    <section id="about" class="border border-white py-m">
+    <section id="about" class="border border-white py-m u-container">
         <h2 class="text-step-4">About teaser</h2>
     </section>
 

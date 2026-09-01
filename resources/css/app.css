@@ -24,6 +24,9 @@
   --color-accent: #3b82f6; /* links, outlines and interactive borders */
   --color-accent-hover: #60a5fa; /* lighter version for hover / active on a dark bg */
 
+  /* UTOPIA GRID CONTAINER MAX WIDTH */
+  --container-content: 77.5rem;
+
   /* UTOPIA FLUID TYPOGRAPHY — use as Tailwind text-size utility values, e.g. "text-step-0", "text-step-2", "text-step--1" */
   /* @link https://utopia.fyi/type/calculator?c=360,18,1.2,1240,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
   --text-step--2: clamp(0.7813rem, 0.7736rem + 0.0341vw, 0.8rem);
@@ -37,7 +40,6 @@
 
   /* UTOPIA FLUID SPACING — use as Tailwind spacing utility values (padding, margin, gap, width, height), e.g. "py-s", "gap-l", "mb-xl" */
   /* @link https://utopia.fyi/space/calculator?c=360,18,1.2,1240,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
-
   --spacing-3xs: clamp(0.3125rem, 0.3125rem + 0vw, 0.3125rem);
   --spacing-2xs: clamp(0.5625rem, 0.5369rem + 0.1136vw, 0.625rem);
   --spacing-xs: clamp(0.875rem, 0.8494rem + 0.1136vw, 0.9375rem);
@@ -59,5 +61,23 @@
   --spacing-2xl-3xl: clamp(4.5rem, 3.2727rem + 5.4545vw, 7.5rem);
 
   /* Custom pairs */
+  /* spacing-s-l is used for the grid gutter value*/
   --spacing-s-l: clamp(1.125rem, 0.5625rem + 2.5vw, 2.5rem);
+
+  /* UTOPIA GRID foundations for page/section containers.*/
+  /* @link https://utopia.fyi/grid/calculator?c=360,18,1.2,1240,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+  --grid-max-width: 77.5rem;
+  --grid-gutter: var(--spacing-s-l, clamp(1.125rem, 0.5625rem + 2.5vw, 2.5rem));
+  --grid-columns: 12;
+}
+
+@utility u-container {
+  max-width: var(--grid-max-width);
+  padding-inline: var(--grid-gutter);
+  margin-inline: auto;
+}
+
+@utility u-grid {
+  display: grid;
+  gap: var(--grid-gutter);
 }
