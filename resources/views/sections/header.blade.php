@@ -1,5 +1,5 @@
 <header class="border-b border-border">
-  <div class="mx-auto flex w-full max-w-6xl items-center justify-between gap-6 px-6 py-4">
+  <div class="u-container flex items-center justify-between gap-s py-s">
     <a class="text-lg font-semibold text-white hover:text-accent-hover" href="{{ home_url('/') }}">
       {!! $siteName !!}
     </a>
