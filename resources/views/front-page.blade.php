@@ -1,10 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-  <section id="hero">
-    <h1>Hero</h1>
-  </section>
-
+  @include('sections.front-page.hero')
   <section id="services">
     <h2>Services overview</h2>
   </section>
