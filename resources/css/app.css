@@ -71,6 +71,60 @@
   --grid-columns: 12;
 }
 
+/* DEFAULT BASE STYLES - these are mapped to the corresponding step variables from our fluid typography system (eg. "--text-step-0"). 
+Line heights also defined here for now (I may refactor this later and create new line height variables to pair with our fluid type steps) */
+
+@layer base {
+  body {
+    font-size: var(--text-step-0);
+    line-height: 1.6;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 700;
+    line-height: 1.15;
+    text-wrap: balance;
+  }
+
+  h1 {
+    font-size: var(--text-step-5);
+  }
+
+  h2 {
+    font-size: var(--text-step-4);
+  }
+
+  h3 {
+    font-size: var(--text-step-3);
+  }
+
+  h4 {
+    font-size: var(--text-step-2);
+  }
+
+  h5 {
+    font-size: var(--text-step-1);
+  }
+
+  h6 {
+    font-size: var(--text-step-0);
+  }
+
+  p {
+    font-size: var(--text-step-0);
+    text-wrap: pretty;
+  }
+
+  small {
+    font-size: var(--text-step--1);
+  }
+}
+
 @utility u-container {
   max-width: var(--grid-max-width);
   padding-inline: var(--grid-gutter);

@@ -22,7 +22,7 @@
     {{ $name }}
   </h3>
 
-  <p class="text-pretty text-step--1 text-muted">
+  <p class="text-step--1 text-muted">
     {{ $description }}
   </p>
 </a>

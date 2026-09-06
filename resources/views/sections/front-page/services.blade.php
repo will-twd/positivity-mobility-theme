@@ -1,6 +1,6 @@
 <section id="services" aria-labelledby="services-heading" class="py-2xl-3xl">
   <div class="u-container">
-    <h2 id="services-heading" class="text-balance text-step-4 font-bold">
+    <h2 id="services-heading">
       Services
     </h2>
 
