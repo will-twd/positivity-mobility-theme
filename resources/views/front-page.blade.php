@@ -2,9 +2,8 @@
 
 @section('content')
   @include('sections.front-page.hero')
-  <section id="services">
-    <h2>Services overview</h2>
-  </section>
+  @include('sections.front-page.services')
+
 
   <section id="about">
     <h2>About teaser</h2>
