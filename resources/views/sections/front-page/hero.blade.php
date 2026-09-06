@@ -1,7 +1,7 @@
-<section id="hero" aria-labelledby="hero-heading" class="py-2xl lg:py-3xl">
+<section id="hero" aria-labelledby="hero-heading" class="py-2xl-3xl">
   <div class="u-container grid items-center gap-l-xl lg:grid-cols-2">
     <div>
-      <h1 id="hero-heading" class="text-balance text-step-4 font-bold lg:text-step-5">
+      <h1 id="hero-heading" class="text-balance text-step-5 font-bold">
         Lorem ipsum dolor amet consectetur
       </h1>
 
