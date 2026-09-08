@@ -5,10 +5,7 @@
   @include('sections.front-page.services')
   @include('sections.front-page.about-teaser')
   @include('sections.front-page.blog-feed')
-
-  <section id="testimonials">
-    <h2>Testimonials</h2>
-  </section>
+  @include('sections.front-page.testimonials')
 
   <section id="service-area">
     <h2>Service area / coverage</h2>
