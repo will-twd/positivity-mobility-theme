@@ -18,7 +18,7 @@
 
     {{-- ================= TYPE — ELEMENT DEFAULTS ================= --}}
     <section class="mb-2xl border-t border-border pt-xl">
-      <h2 class="mb-s underline">Base Element Styles</h2>
+      <h2 class="mb-xl underline text-amber-400">Base Element Styles</h2>
 
       <div class="flex flex-col gap-m">
         <div>
@@ -60,7 +60,7 @@
 
     {{-- ================= TYPE — FULL STEP SCALE ================= --}}
     <section class="mb-2xl border-t border-border pt-xl">
-      <h2 class="mb-s underline">Utopia Step Size Variables</h2>
+      <h2 class="mb-xl underline text-amber-400">Utopia Step Size Variables</h2>
       <p class="mb-l max-w-prose text-muted">
         All eight Utopia steps, including ones no template uses yet. Applied
         directly (as <code>text-step-N</code> utilities) on non-heading
@@ -79,12 +79,12 @@
 
     {{-- ================= COLOUR ================= --}}
     <section class="mb-2xl border-t border-border pt-xl">
-      <h2 class="mb-s underline">Colour</h2>
+      <h2 class="mb-xl underline text-amber-400">Colour</h2>
 
       @php
         $colours = [
-            ['token' => 'black', 'util' => 'bg-black', 'role' => 'page background'],
-            ['token' => 'white', 'util' => 'text-white', 'role' => 'primary text'],
+            ['token' => 'background', 'util' => 'bg-background', 'role' => 'page background'],
+            ['token' => 'foreground', 'util' => 'text-foreground', 'role' => 'primary text'],
             ['token' => 'surface', 'util' => 'bg-surface', 'role' => 'cards / raised sections'],
             ['token' => 'surface-raised', 'util' => 'bg-surface-raised', 'role' => 'nested / hover surfaces'],
             ['token' => 'border', 'util' => 'border-border', 'role' => 'borders, dividers'],
@@ -110,12 +110,12 @@
 
     {{-- ================= COMPONENTS ================= --}}
     <section class="mb-2xl border-t border-border pt-xl">
-      <h2 class="mb-s underline">Components</h2>
+      <h2 class="mb-xl underline text-amber-400">Components</h2>
 
       {{-- Button — TODO: extract to <x-button> on its next use (APPROACH.md, "componentize on the second use"). --}}
       <h3 class="mb-s">Button / CTA</h3>
       <a href="{{ home_url('/contact') }}"
-        class="inline-flex items-center rounded-full bg-accent px-m py-xs text-step--1 font-semibold text-white transition-colors hover:bg-accent-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-hover">
+        class="inline-flex items-center rounded-full bg-accent px-m py-xs text-step--1 font-semibold text-foreground transition-colors hover:bg-accent-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-hover">
         Enquire now
       </a>
       <p class="mt-s text-step--1 text-muted">

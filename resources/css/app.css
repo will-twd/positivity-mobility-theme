@@ -5,16 +5,13 @@
 
 /*@theme static forces unused TW tokens to generate as CSS variables. This allows Sage to include them when generating theme.json, and makes them accessible in gutenberg.*/
 @theme static {
-  /* Disables default TW color tokens */
-  --color-*: initial;
-
   --color-transparent: transparent;
   --color-current: currentColor;
   --color-inherit: inherit;
 
   /* Neutrals suggested by client: black background, white text, high contrast */
-  --color-black: #000000;
-  --color-white: #ffffff;
+  --color-background: #000000; /* page background */
+  --color-foreground: #ffffff; /* primary text */
   --color-surface: #0f0f0f; /* cards raised sections */
   --color-surface-raised: #1a1a1a; /* nested or hover surfaces */
   --color-border: #2a2a2a; /* borders, dividers */

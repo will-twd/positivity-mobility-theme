@@ -10,11 +10,11 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
   </head>
 
-  <body @php(body_class('bg-black text-white antialiased'))>
+  <body @php(body_class('bg-background text-foreground antialiased'))>
     @php(wp_body_open())
 
     <div id="app" class="flex min-h-screen flex-col">
-      <a class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:bg-accent focus:px-xs focus:py-2xs focus:text-white"
+      <a class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:bg-accent focus:px-xs focus:py-2xs focus:text-foreground"
         href="#main">
         {{ __('Skip to content', 'sage') }}
       </a>

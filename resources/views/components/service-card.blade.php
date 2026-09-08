@@ -18,7 +18,7 @@
     icon
   </span>
 
-  <h3 class="text-step-2 font-semibold text-white group-hover:text-accent-hover">
+  <h3 class="text-step-2 font-semibold text-foreground group-hover:text-accent-hover">
     {{ $name }}
   </h3>
 

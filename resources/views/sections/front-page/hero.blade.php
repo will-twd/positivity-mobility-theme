@@ -12,7 +12,7 @@
       </p>
 
       <a href="{{ home_url('/contact') }}"
-        class="mt-m inline-flex items-center rounded-full bg-accent px-m py-xs text-step--1 font-semibold text-white transition-colors hover:bg-accent-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-hover">
+        class="mt-m inline-flex items-center rounded-full bg-accent px-m py-xs text-step--1 font-semibold text-foreground transition-colors hover:bg-accent-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-hover">
         Enquire now
       </a>
     </div>

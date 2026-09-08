@@ -1,6 +1,6 @@
 <header class="border-b border-border">
   <div class="u-container flex items-center justify-between gap-s py-s">
-    <a class="text-lg font-semibold text-white hover:text-accent-hover" href="{{ home_url('/') }}">
+    <a class="text-lg font-semibold text-foreground hover:text-accent-hover" href="{{ home_url('/') }}">
       {!! $siteName !!}
     </a>
 
