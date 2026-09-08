@@ -6,10 +6,7 @@
   @include('sections.front-page.about-teaser')
   @include('sections.front-page.blog-feed')
   @include('sections.front-page.testimonials')
-
-  <section id="service-area">
-    <h2>Service area / coverage</h2>
-  </section>
+  @include('sections.front-page.service-area')
 
   <section id="cta">
     <h2>Final CTA</h2>
