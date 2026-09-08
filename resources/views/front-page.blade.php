@@ -7,8 +7,5 @@
   @include('sections.front-page.blog-feed')
   @include('sections.front-page.testimonials')
   @include('sections.front-page.service-area')
-
-  <section id="cta">
-    <h2>Final CTA</h2>
-  </section>
+  @include('sections.front-page.cta')
 @endsection
