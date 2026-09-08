@@ -3,11 +3,7 @@
 @section('content')
   @include('sections.front-page.hero')
   @include('sections.front-page.services')
-
-
-  <section id="about">
-    <h2>About teaser</h2>
-  </section>
+  @include('sections.front-page.about-teaser')
 
   <section id="blog">
     <h2>Blog feed</h2>
