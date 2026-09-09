@@ -3,5 +3,6 @@
 @section('content')
   @include('partials.page-header')
   @include('sections.services.overview')
+  @include('sections.services.details')
   @include('sections.services.pricing')
 @endsection
