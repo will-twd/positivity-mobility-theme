@@ -6,7 +6,8 @@
       </h2>
 
       <div class="mt-l flex max-w-prose flex-col gap-s text-muted">
-        <?php echo wp_kses_post(get_field('about-introduction')); ?>
+        {{-- ACF text area field for introduction, ACF settings format into <p> tags. Passed through kses for sanitization --}}
+        {!! wp_kses_post(get_field('about-introduction')) !!}
       </div>
     </div>
 
